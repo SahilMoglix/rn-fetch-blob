@@ -23,7 +23,7 @@ public class RNFetchBlobUtils {
         String result = null;
 
         try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
+            MessageDigest md = MessageDigest.getInstance("SHA256");
             md.update(input.getBytes());
             byte[] digest = md.digest();
 
